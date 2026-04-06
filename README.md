@@ -1,140 +1,71 @@
-# 🛍️ Fashion E-commerce AR Platform
+# 🛍️ Fashion E-Commerce Platform with AR Virtual Try-On
 
-> Modern e-commerce platform for clothing brand with AR Virtual Try-On technology
+Modern e-commerce platform for clothing brands featuring AR virtual try-on technology.
 
-[![Project Status](https://img.shields.io/badge/status-planning-yellow)](https://github.com/Abdelrahmankhedr25/fashion-ecommerce-ar)
-[![License](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
+## 🎯 Project Overview
+- **Target Market:** Egypt & Middle East
+- **Target Audience:** 18-35 years old
+- **Design Inspiration:** Zara minimalist aesthetic
+- **Key Feature:** AR Virtual Try-On
 
-## 🎯 Overview
+## 🚀 Tech Stack
+- **Frontend:** React.js + Tailwind CSS
+- **Backend:** Node.js + Express
+- **Database:** MongoDB
+- **Payment:** Paymob (Egypt)
+- **AR:** AR.js / 8thWall (WebAR)
+- **Hosting:** Vercel (Frontend) + Railway (Backend)
 
-A cutting-edge e-commerce platform targeting the Egyptian and Middle Eastern market, featuring:
-
-- 🛒 Full-featured online store
-- 📱 Responsive design (Mobile, Tablet, Desktop)
-- 🎨 Zara-inspired minimalist UI
-- ⚡ Virtual Try-On using AR technology
-- 💳 Multiple payment options
-- 🌐 Arabic/English support
-
-## 🚀 Core Features
-
-### Phase 1: MVP E-commerce
-- Product catalog with filtering/sorting
-- Shopping cart & checkout
-- User authentication & profiles
-- Order tracking
-- Payment gateway integration
-
-### Phase 2: AR Integration
-- WebAR Virtual Try-On
-- Real-time outfit visualization
-- Multi-item try-on
-- Color/size variation preview
-
-## 🛠️ Tech Stack
-
-**Frontend:**
-- React.js
-- HTML5, CSS3, JavaScript
-
-**Backend:**
-- Node.js / PHP (TBD)
-
-**Database:**
-- MySQL / MongoDB (TBD)
-
-**AR Technology:**
-- WebAR (AR.js / 8thWall)
-
-**Platform Options:**
-- Shopify (Fast deployment)
-- WooCommerce (Full flexibility)
-
-## 📋 Project Structure
-
+## 📁 Project Structure
 ```
 fashion-ecommerce-ar/
-├── PRD.md                 # Product Requirements Document
-├── docs/
-│   ├── architecture.md    # Technical architecture
-│   ├── api-specs.md       # API specifications
-│   └── design-guide.md    # UI/UX guidelines
-├── planning/
-│   ├── timeline.md         # Project timeline
-│   ├── budget.md          # Budget breakdown
-│   └── team.md            # Team structure
-└── README.md
+├── frontend/           # React.js application
+├── backend/            # Node.js API
+├── ar-engine/          # AR virtual try-on module
+├── docs/               # Documentation & PRD
+└── design/             # UI/UX designs & assets
 ```
 
-## 📅 Timeline
+## 🛠️ Development Phases
+1. **Phase 1:** UI/UX Design (2 weeks)
+2. **Phase 2:** Frontend Development (3-4 weeks)
+3. **Phase 3:** Backend Development (3-4 weeks)
+4. **Phase 4:** AR Integration (4-6 weeks)
+5. **Phase 5:** Testing (2-3 weeks)
+6. **Phase 6:** Launch (1 week)
 
-| Phase | Duration | Status |
-|-------|----------|--------|
-| Planning & Design | 2-3 weeks | 🟡 In Progress |
-| Frontend Development | 4-6 weeks | ⚪ Not Started |
-| Backend Development | 4-6 weeks | ⚪ Not Started |
-| AR Integration | 6-8 weeks | ⚪ Not Started |
-| Testing & QA | 2-3 weeks | ⚪ Not Started |
-| Launch | 1 week | ⚪ Not Started |
+## 📦 MVP Features
+- Homepage with hero section
+- Product listing with filters
+- Product details page
+- Shopping cart
+- Checkout with Paymob
+- User authentication
+- Search functionality
+- Mobile responsive
 
-## 💰 Budget Overview
-
-- **UI/UX Design:** 5K - 10K
-- **Development:** 10K - 20K
-- **AR Integration:** 20K - 50K
-- **Hosting & Infrastructure:** 2K - 5K
-
-**Total Estimated:** 37K - 85K
-
-## 🎯 Target Market
-
-- **Demographics:** 18-35 years old
-- **Region:** Egypt & Middle East
-- **Behavior:** Active online shoppers
-- **Interest:** Fashion-forward, tech-savvy
-
-## 📈 Success Metrics (KPIs)
-
-- Conversion Rate
-- Average Order Value
-- AR Feature Usage Rate
-- Customer Satisfaction Score
-- Return Rate
-
-## 🔐 Security & Compliance
-
-- HTTPS encryption
-- PCI DSS compliance for payments
-- GDPR-compliant data handling
-- Secure authentication
-
-## 🌟 Future Enhancements
-
-- AI-powered styling recommendations
-- Native mobile apps (iOS/Android)
-- Loyalty program
+## 🔮 Future Features
+- AR Virtual Try-On
+- Wishlist
+- Order tracking
+- Reviews & ratings
 - Social media integration
-- Live chat support
 
-## 📞 Contact & Team
+## 🚀 Getting Started
 
-**Project Lead:** Abdelrahman
-**Repository:** [fashion-ecommerce-ar](https://github.com/Abdelrahmankhedr25/fashion-ecommerce-ar)
+### Frontend
+```bash
+cd frontend
+npm install
+npm run dev
+```
 
----
+### Backend
+```bash
+cd backend
+npm install
+npm run dev
+```
 
-## 📄 Documentation
-
-For detailed project requirements, see [PRD.md](PRD.md)
-
-## 🤝 Contributing
-
-This is a private project currently in planning phase.
-
-## 📝 License
-
-MIT License - see [LICENSE](LICENSE) for details
-
----
-
-**Built with ❤️ for the future of online fashion retail**
+## 📄 License
+MIT License
