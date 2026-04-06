@@ -1,71 +1,53 @@
 # 🛍️ Fashion E-Commerce Platform with AR Virtual Try-On
 
-Modern e-commerce platform for clothing brands featuring AR virtual try-on technology.
+**Modern, minimalist e-commerce platform for clothing brands** - Inspired by Zara/H&M, targeting Egyptian & Middle Eastern market (ages 18-35).
 
-## 🎯 Project Overview
-- **Target Market:** Egypt & Middle East
-- **Target Audience:** 18-35 years old
-- **Design Inspiration:** Zara minimalist aesthetic
-- **Key Feature:** AR Virtual Try-On
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
 
-## 🚀 Tech Stack
-- **Frontend:** React.js + Tailwind CSS
-- **Backend:** Node.js + Express
-- **Database:** MongoDB
-- **Payment:** Paymob (Egypt)
-- **AR:** AR.js / 8thWall (WebAR)
-- **Hosting:** Vercel (Frontend) + Railway (Backend)
+## 🎯 Project Vision
 
-## 📁 Project Structure
-```
-fashion-ecommerce-ar/
-├── frontend/           # React.js application
-├── backend/            # Node.js API
-├── ar-engine/          # AR virtual try-on module
-├── docs/               # Documentation & PRD
-└── design/             # UI/UX designs & assets
-```
+Create a premium fashion e-commerce experience with cutting-edge AR virtual try-on technology to reduce returns and increase customer confidence in online clothing purchases.
 
-## 🛠️ Development Phases
-1. **Phase 1:** UI/UX Design (2 weeks)
-2. **Phase 2:** Frontend Development (3-4 weeks)
-3. **Phase 3:** Backend Development (3-4 weeks)
-4. **Phase 4:** AR Integration (4-6 weeks)
-5. **Phase 5:** Testing (2-3 weeks)
-6. **Phase 6:** Launch (1 week)
+## ✨ Key Features
 
-## 📦 MVP Features
-- Homepage with hero section
-- Product listing with filters
-- Product details page
-- Shopping cart
-- Checkout with Paymob
-- User authentication
-- Search functionality
-- Mobile responsive
+### Core E-Commerce
+- 🏠 **Homepage** - Hero section, featured collections, trending products
+- 📦 **Product Catalog** - Advanced filtering (category, size, color, price)
+- 🔍 **Product Details** - Image gallery, size charts, customer reviews
+- 🛒 **Shopping Cart** - Add/remove/update quantities
+- 💳 **Checkout** - Guest & registered user checkout with Paymob integration
+- 👤 **User Accounts** - Registration, login, order history, wishlist
 
-## 🔮 Future Features
-- AR Virtual Try-On
-- Wishlist
-- Order tracking
-- Reviews & ratings
-- Social media integration
+### Innovation
+- 🥽 **AR Virtual Try-On** - WebAR technology for visualizing clothing
+- 📱 **Mobile-First** - Responsive design optimized for mobile
+- 🎨 **Minimalist UI** - Clean, Zara-inspired aesthetic
 
-## 🚀 Getting Started
+## 🛠️ Tech Stack
 
-### Frontend
-```bash
-cd frontend
-npm install
-npm run dev
-```
+**Frontend**: React.js + Tailwind CSS + AR.js/8th Wall  
+**Backend**: Node.js + Express + MongoDB  
+**Hosting**: Vercel (frontend) + Railway (backend)  
+**Payment**: Paymob integration
 
-### Backend
-```bash
-cd backend
-npm install
-npm run dev
-```
+## 📋 Development Phases
 
-## 📄 License
-MIT License
+| Phase | Description | Status |
+|-------|-------------|--------|
+| Phase 1 | UI/UX Design | 🚀 Active |
+| Phase 2 | Frontend Development | 🔵 Planning |
+| Phase 3 | Backend Development | 🔵 Planning |
+| Phase 4 | AR Integration | 🔵 Planning |
+| Phase 5 | Testing & QA | 🔵 Planning |
+| Phase 6 | Launch | 🔵 Planning |
+
+## 📄 Documentation
+
+- [Product Requirements Document (PRD)](./PRD.md)
+- [Technology Stack Details](./TECH_STACK.md)
+- [Development Setup Guide](./DEVELOPMENT_SETUP.md)
+
+---
+
+**Status**: 🚧 Active Development  
+**Last Updated**: April 6, 2026

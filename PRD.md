@@ -1,261 +1,110 @@
-# 📌 Product Requirements Document (PRD)
-## مشروع: موقع تجارة إلكترونية لبراند ملابس مع تجربة AR
+# Product Requirements Document (PRD)
+## Fashion E-Commerce Platform with AR Virtual Try-On
+
+**Version**: 1.0  
+**Date**: April 6, 2026
 
 ---
 
-## 1. المقدمة
+## 1. Executive Summary
 
-**اسم المشروع:** منصة تجارة إلكترونية لبراند ملابس (Fashion E-commerce Platform)
+### Product Vision
+Build a premium fashion e-commerce platform combining minimalist design with AR virtual try-on technology for the Egyptian and Middle Eastern market.
 
-**الوصف:** موقع لبيع الملابس (تيشيرتات، بناطيل، أكسسوارات) مع تجربة مبتكرة باستخدام الواقع المعزز (AR) تسمح للمستخدم "بتجربة الطقم عليه" قبل الشراء.
+### Target Audience
+- **Primary**: 18-35 year olds in Egypt
+- **Secondary**: Middle Eastern countries
 
-**الإلهام التصميمي:** مثل مواقع Zara و H&M
-
-**الفئة المستهدفة:**
-- شباب (18–35 سنة)
-- مستخدمين أونلاين نشطين
-- مصر والشرق الأوسط
-
----
-
-## 2. 🎯 الأهداف (Objectives)
-
-### أهداف بيزنس:
-- زيادة المبيعات أونلاين
-- تقليل نسبة المرتجعات
-- بناء براند قوي وحديث
-
-### أهداف المنتج:
-- تجربة مستخدم سهلة وسريعة
-- تقديم ميزة AR تفاعلية ومميزة
-- تصميم Premium مشابه للبراندات العالمية
+### Success Metrics (KPIs)
+- Conversion Rate: 2-4%
+- Cart Abandonment: <70%
+- Average Order Value: 500-800 EGP
+- Return Rate: <15%
+- Page Load Time: <3 seconds
+- Mobile Traffic: >60%
 
 ---
 
-## 3. 👤 Personas (نماذج المستخدمين)
+## 2. Core Features
 
-### 👨‍💻 أحمد – 25 سنة
-- بيحب الموضة
-- بيشتري أونلاين
-- بيهتم بشكل اللبس عليه
+### 2.1 Homepage
+- Hero section with seasonal campaigns
+- Featured product collections
+- Trending products carousel
+- Brand story section
 
-### 👩‍🎓 سارة – 22 سنة
-- بتدور على عروض
-- بتحب تجربة منتجات قبل الشراء
+### 2.2 Product Catalog
+- Grid/list view toggle
+- Advanced filters (category, size, color, price)
+- Sorting options
+- Quick view modal
 
----
+### 2.3 Product Details
+- Image gallery with zoom
+- Size selector with availability
+- Color variants
+- **AR Try-On button**
+- Size chart & reviews
 
-## 4. 🧩 نطاق المنتج (Scope)
+### 2.4 AR Virtual Try-On
+- WebAR technology (AR.js or 8th Wall)
+- Real-time camera overlay
+- Photo capture & share
+- Size adjustment
 
-### يشمل:
-- موقع Web كامل (Responsive)
-- تجربة AR
-- نظام طلبات ودفع
+### 2.5 Shopping Cart & Checkout
+- Cart management
+- Guest checkout
+- Paymob payment integration
+- Cash on Delivery
 
-### لا يشمل:
-- تطبيق Mobile (Phase لاحقة)
-- AI Styling (اختياري لاحقًا)
-
----
-
-## 5. ⚙️ المتطلبات الوظيفية (Functional Requirements)
-
-### 5.1 الصفحة الرئيسية (Homepage)
-- بانر كبير (Hero Section)
-- عرض أحدث المنتجات
-- عروض وخصومات
-- CTA واضح (Shop Now)
-
-### 5.2 صفحة المنتجات (Product Listing)
-- Grid عرض المنتجات
-- فلترة حسب: السعر، المقاس، اللون، النوع
-- ترتيب (Sort)
-
-### 5.3 صفحة المنتج (Product Details)
-- صور عالية الجودة (Zoom + Gallery)
-- تفاصيل المنتج: وصف، خامة، السعر
-- اختيار: المقاس، اللون
-- زر: Add to Cart
-- ⭐ "جرب الطقم عليك" (AR)
-
-### 5.4 ميزة AR (Core Feature 🚀)
-
-**الوظائف:**
-- استخدام الكاميرا أو رفع صورة
-- عرض المنتج على جسم المستخدم
-- تغيير: اللون، المقاس
-- تجربة أكثر من قطعة (Outfit)
-
-**User Flow:**
-1. يضغط "جرب الطقم"
-2. يسمح بالكاميرا
-3. يظهر عليه المنتج
-4. يقدر يعدل ويضيف للسلة
-
-### 5.5 سلة المشتريات (Cart)
-- إضافة / حذف منتجات
-- تعديل الكمية
-- عرض الإجمالي
-- الانتقال للدفع
-
-### 5.6 Checkout (الدفع)
-- إدخال بيانات: الاسم، العنوان، رقم الهاتف
-- طرق الدفع: كاش عند الاستلام، بطاقة
-- تأكيد الطلب
-
-### 5.7 حساب المستخدم
-- تسجيل / تسجيل دخول
-- تتبع الطلبات
+### 2.6 User Accounts
+- Registration & login
+- Order history
+- Saved addresses
 - Wishlist
-- حفظ العناوين
-
-### 5.8 البحث (Search)
-- Auto-suggestions
-- نتائج فورية
-- دعم اللغة العربية والإنجليزية
 
 ---
 
-## 6. 🚫 المتطلبات غير الوظيفية (Non-Functional Requirements)
+## 3. Technical Architecture
 
-### الأداء:
-- تحميل الصفحة < 3 ثواني
-- دعم 10,000 مستخدم متزامن
-
-### الأمان:
-- HTTPS
-- حماية بيانات المستخدم
-- PCI Compliance للدفع
-
-### التوافق:
-- Chrome / Safari / Edge
-- Mobile / Tablet / Desktop
-
-### القابلية للتوسع:
-- بنية قابلة للتوسع (Scalable)
+**Frontend**: React.js + Tailwind CSS + Vite  
+**Backend**: Node.js + Express + MongoDB  
+**Authentication**: JWT  
+**Storage**: Cloudinary (images)  
+**Hosting**: Vercel + Railway + MongoDB Atlas
 
 ---
 
-## 7. 🎨 UI/UX Design
+## 4. Development Timeline
 
-### الأسلوب:
-- Minimal & Clean
-- Inspired by Zara
+| Phase | Duration | Status |
+|-------|----------|--------|
+| Design | 2 weeks | 🚀 Active |
+| Frontend | 4 weeks | Planning |
+| Backend | 3 weeks | Planning |
+| AR Integration | 3 weeks | Planning |
+| Testing | 2 weeks | Planning |
+| Launch | 1 week | Planning |
 
-### الألوان:
-- أبيض / أسود / رمادي / بيج
-- Accent color بسيط
-
-### الخطوط:
-- Sans-serif (Helvetica / Arial)
-
-### التجربة:
-- Navigation بسيطة
-- CTA واضح
-- صور كبيرة وجذابة
+**Total**: ~15 weeks (MVP without AR: 10-11 weeks)
 
 ---
 
-## 8. 🧱 النظام التقني (Technical Architecture)
+## 5. Budget Estimate (EGP)
 
-### Frontend:
-- React.js (preferred)
-- HTML, CSS, JavaScript
+| Item | Cost |
+|------|------|
+| Design | 5,000 - 8,000 |
+| Frontend | 10,000 - 15,000 |
+| Backend | 8,000 - 12,000 |
+| AR Integration | 20,000 - 50,000 |
+| Hosting (Year 1) | 2,000 - 5,000 |
+| Testing | 3,000 - 5,000 |
+| **Total** | **57,000 - 113,000** |
 
-### Backend:
-- Node.js أو PHP
-
-### Database:
-- MySQL أو MongoDB
-
-### AR Technology:
-- WebAR (مثل AR.js أو 8thWall)
-
-### منصة:
-- Shopify (سريع) أو WooCommerce (مرن)
+**MVP (No AR)**: ~37,000 - 63,000 EGP
 
 ---
 
-## 9. 🔌 APIs المطلوبة
-- Payment Gateway (مثل Stripe / Paymob)
-- Shipping API
-- Image CDN
-- AR SDK
-
----
-
-## 10. 📊 KPIs (مؤشرات الأداء)
-- Conversion Rate
-- Bounce Rate
-- Average Order Value
-- Time on Site
-- نسبة استخدام AR
-
----
-
-## 11. 🧪 الاختبار (Testing)
-- Functional Testing
-- UI Testing
-- Performance Testing
-- AR Testing
-- User Testing
-
----
-
-## 12. 🚀 خطة الإطلاق (Launch Plan)
-
-### Soft Launch:
-- اختبار مع عدد محدود
-
-### Official Launch:
-- حملات سوشيال ميديا
-- Influencers
-
----
-
-## 13. 📅 الجدول الزمني
-
-| المرحلة | المدة |
-|---------|----------|
-| التصميم | 2-3 أسابيع |
-| التطوير | 4-6 أسابيع |
-| AR | 6-8 أسابيع |
-| Testing | 2-3 أسابيع |
-| Launch | 1 أسبوع |
-
----
-
-## 14. 💰 الميزانية التقديرية
-
-| البند | التكلفة |
-|-----------|----------|
-| UI Design | 5K – 10K |
-| Development | 10K – 20K |
-| AR | 20K – 50K |
-| Hosting | 2K – 5K |
-
----
-
-## 15. ⚠️ المخاطر (Risks)
-- صعوبة تنفيذ AR بدقة
-- بطء الأداء
-- مشاكل في الدفع
-
----
-
-## 16. 🔮 التطوير المستقبلي (Future Enhancements)
-- AI Stylist (اقتراح outfits)
-- Mobile App
-- Loyalty Program
-- Social Sharing
-
----
-
-## 17. ✅ الخطوات التالية
-
-1. تحديد الفريق
-2. عمل Wireframes
-3. اختيار التكنولوجيا
-4. بدء التطوير
-5. اختبار
-6. إطلاق
+**Status**: ✅ Approved for Development
